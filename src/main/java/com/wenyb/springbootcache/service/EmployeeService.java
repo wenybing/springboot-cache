@@ -15,7 +15,7 @@ import java.util.List;
  * @Author wenyabing
  * @Date 2019/2/20 21:20
  */
-@CacheConfig(cacheNames = "emp")
+@CacheConfig(cacheNames = "emp", cacheManager = "employeeCacheManager")
 @Service
 public class EmployeeService {
     @Autowired
